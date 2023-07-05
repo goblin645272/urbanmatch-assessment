@@ -111,7 +111,10 @@ class _MyHomePageState extends State<MyHomePage> {
                           children: [
                             Text(
                               gitrepoList[index].name!,
-                              style: const TextStyle(color: Colors.white),
+                              style: const TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 17,
+                                  fontWeight: FontWeight.bold),
                             ),
                             const SizedBox(
                               width: 20,
@@ -158,7 +161,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             "Last Commit id: ${gitrepoList[index].lastCommit!.sha!.substring(0, 6)}",
                             style: const TextStyle(
                               color: Colors.white,
-                              fontSize: 20,
+                              fontSize: 15,
                             ),
                           )
                         : const Row(
